@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đỗ Đức Long</title>
+    <!-- Mặc định dùng style1.css -->
+    <link id="themeStylesheet" rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- Thanh chọn style: 3 nút cho 3 style -->
+    <div class="style-buttons">
+        <button onclick="applyStyle(1)">Style 1</button>
+        <button onclick="applyStyle(2)">Style 2</button>
+        <button onclick="applyStyle(3)">Style 3</button>
+    </div>
+
+    <div class="container">
+        <!-- CỘT TRÁI: Thông tin cá nhân (profile) -->
+        <div class="left-column">
+            <!-- Card chứa ảnh, tên, chức danh, mô tả -->
+            <div class="profile-card">
+                <!-- Thay avatar.jpg bằng ảnh thật của bạn -->
+                <img src="img/1.jpg" alt="User Photo" />
+                <h2>Đỗ Đức Long</h2>
+                <h4>Data Scientist Intern</h4>
+                <p style="text-align: left;">
+                    Data Scientist Intern with a passion for data analysis and machine learning.
+                    Skilled in Python, SQL, and statistical modeling, with experience in extracting insights from
+                    complex datasets.
+                    Always eager to learn new techniques and apply them to real-world problems.
+                </p>
+            </div>
+
+            <!-- Card chứa thông tin cá nhân -->
+            <div class="personal-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Student ID:</strong> 20225034</li>
+                    <li><strong>Date of Birth:</strong> 31/07/2004</li>
+                    <li><strong>Phone:</strong> 093636xxxx</li>
+                    <li><strong>Email:</strong> <a href="mailto:[email protected]">[email protected]</a></li>
+                    <li><strong>Address:</strong> Hanoi, Vietnam</li>
+                    <li><strong>Github:</strong>
+                        <a href="https://github.com/your-github" target="_blank">github.com/your-github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CỘT PHẢI: Project, Knowledge, Experience, Reward -->
+        <div class="right-column">
+            <div class="card">
+                <h3>Project</h3>
+                <p><strong>Real Estate Market Analysis</strong></p>
+                <p>
+                    <strong>Description:</strong> Developed a predictive model using machine learning to analyze
+                    property prices and trends based on historical data. Applied data preprocessing, feature
+                    engineering, and regression models to improve accuracy.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Knowledge</h3>
+                <ul>
+                    <li>Programming: Python, SQL, R</li>
+                    <li>Machine Learning: Supervised & Unsupervised Learning, Feature Engineering, Model Optimization
+                    </li>
+                    <li>Data Processing: Pandas, NumPy, Scikit-learn, NLP, Data Cleaning</li>
+                    <li>Visualization: Matplotlib, Seaborn, Power BI, Tableau</li>
+                    <li>Big Data & Cloud: Spark, Hadoop, Google Cloud, AWS</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Experience</h3>
+                <p><strong>Data Scientist Intern</strong></p>
+                <p><em>Place:</em> Top Company</p>
+                <p>
+                    Built and optimized machine learning models for predictive analytics.
+                    Developed ETL pipelines for processing large datasets efficiently.
+                    Applied statistical analysis and data visualization techniques to derive actionable insights.
+                    Collaborated with cross-functional teams to integrate data-driven solutions into business
+                    operations.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Reward</h3>
+                <p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script chọn style (1, 2, hoặc 3) -->
+    <script>
+        function applyStyle(n) {
+            document
+                .getElementById('themeStylesheet')
+                .setAttribute('href', 'style' + n + '.css');
+        }
+    </script>
+</body>
+
+</html>

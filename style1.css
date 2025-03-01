@@ -1,0 +1,126 @@
+/* style1.css - Giao diện 1 */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #eeeeee;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* THANH NÚT CHỌN STYLE */
+.style-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 999;
+}
+.style-buttons button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CONTAINER: 2 cột */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto 20px; /* Chừa 80px để không bị nút che */
+  display: flex;
+  gap: 20px;
+}
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-column {
+  flex: 1;
+}
+.right-column {
+  flex: 2;
+}
+
+/* CARD CHUNG: nền trắng, bo góc, bóng nhẹ */
+.profile-card,
+.personal-info,
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PROFILE-CARD */
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.profile-card h2,
+.profile-card h4 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+.profile-card p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* PERSONAL-INFO */
+.personal-info h3 {
+  margin-bottom: 10px;
+}
+.personal-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+.personal-info li {
+  margin-bottom: 8px;
+}
+.personal-info a {
+  color: #333;
+  text-decoration: none;
+}
+.personal-info a:hover {
+  text-decoration: underline;
+}
+
+/* CARD PHẢI */
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+.card p {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.card ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* RESPONSIVE: xếp dọc */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
